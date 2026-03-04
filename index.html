@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard AI | Real-Time Link Security Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="glass">
+        <div class="container nav">
+            <a href="#" class="logo">
+                <i class="fas fa-shield-halved"></i>
+                PhishGuard <span class="ai-tag">AI</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://github.com/orkun022/PhishGuard-AI" target="_blank" class="btn-github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Scanner Hero Section -->
+        <section class="hero-product container">
+            <div class="hero-content fade-in">
+                <h1>Scan any link before you click.</h1>
+                <p>Advanced AI-powered protection against phishing and malicious URLs. Powered by deep structural
+                    analysis.</p>
+            </div>
+
+            <div class="main-scanner-box glass fade-in" style="animation-delay: 0.2s;">
+                <div class="input-wrapper">
+                    <i class="fas fa-link link-icon"></i>
+                    <input type="text" id="url-input" placeholder="Paste a suspicious link here...">
+                    <button id="scan-btn" class="btn btn-primary">
+                        Scan Now <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <!-- Interactive Result Display -->
+                <div id="result-area" class="product-result" style="display: none;">
+                    <!-- Results injected by app.js -->
+                </div>
+            </div>
+
+            <div class="trust-badges fade-in" style="animation-delay: 0.4s;">
+                <span><i class="fas fa-bolt"></i> 0.1s Scan Time</span>
+                <span><i class="fas fa-brain"></i> AI Classifiers</span>
+                <span><i class="fas fa-check-double"></i> 99.5% Accuracy</span>
+            </div>
+        </section>
+
+        <!-- Features/Benefits Section -->
+        <section id="how-it-works" class="container">
+            <div class="section-title">
+                <h2>Why trust PhishGuard?</h2>
+                <p>Unlike simple blacklists, we analyze the DNA of a URL to catch threats before they're reported.</p>
+            </div>
+            <div class="feature-cards">
+                <div class="product-card glass">
+                    <i class="fas fa-mask"></i>
+                    <h3>Detects Obfuscation</h3>
+                    <p>Catches hidden redirects and character-swapping tricks used by hackers.</p>
+                </div>
+                <div class="product-card glass">
+                    <i class="fas fa-globe"></i>
+                    <h3>Zero-Day Ready</h3>
+                    <p>Identifies brand new malicious sites by their structural patterns.</p>
+                </div>
+                <div class="product-card glass border-primary">
+                    <i class="fas fa-shield-virus"></i>
+                    <h3>Deep Scan</h3>
+                    <p>Analyzes 16 different factors including IP-based hosting and suspicious TLDs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Stats Section -->
+        <section id="faq" class="container">
+            <div class="faq-container glass">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>Is it free?</h3>
+                    <p>Yes, PhishGuard AI is an open-source project designed to make the internet safer for everyone.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does the AI work?</h3>
+                    <p>We use ensemble machine learning (XGBoost, Random Forest) trained on millions of verified
+                        malicious and safe URLs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-left">
+                <div class="logo">
+                    <i class="fas fa-shield-halved"></i> PhishGuard AI
+                </div>
+                <p>Advanced Phishing Detection Intelligence</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 Developed by Orkun Can.</p>
+                <div class="social-links">
+                    <a href="mailto:orkuncan002@gmail.com" title="Email Us"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/orkun022" target="_blank" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
